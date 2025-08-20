@@ -413,6 +413,10 @@ pip install django reportlab
 # 2. Run
 python manage.py makemigrations data_simulation
 python manage.py migrate
+# Migrate each database
+python manage.py migrate --database=users_db
+python manage.py migrate --database=products_db  
+python manage.py migrate --database=orders_db
 python manage.py simulate_insertions
 
 # 3. Generate PDF Report (Optional)
