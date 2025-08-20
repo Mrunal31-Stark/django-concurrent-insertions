@@ -26,12 +26,7 @@
 - **`generate_pdf_report`**: Advanced command with PDF generation
 - **Customizable Parameters**: Thread count, output filename options
 
-### 5. **PDF Report Generation** 📄
-- **Professional Formatting**: Tables, colors, proper styling
-- **Comprehensive Data**: All insertion results with success/failure details
-- **Performance Metrics**: Execution time, success rates, thread analysis
-
-### 6. **Documentation & Setup** 📚
+### 5. **Documentation & Setup** 📚
 - **Comprehensive README**: Step-by-step setup instructions
 - **Requirements File**: Dependency management
 - **Setup Scripts**: Automated installation for Windows and Unix
@@ -65,16 +60,8 @@ for i, user_data in enumerate(users_data):
     thread.start()
 ```
 
-### **PDF Generation**
-```python
-# Professional PDF with tables and styling
-users_table = Table(users_data, colWidths=[1.5*inch, 1*inch, 2*inch, 2.5*inch])
-users_table.setStyle(TableStyle([
-    ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
-    ('GRID', (0, 0), (-1, -1), 1, colors.black),
-    ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.lightgreen, colors.white])
-]))
-```
+
+
 
 ## 📈 **Performance Results**
 
